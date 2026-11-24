@@ -36,13 +36,19 @@ agent：excalidraw_edit(把 "auth" 改成 "鉴权服务")
 需要 DeepSeek Harness **0.2.2-rc.5**（写在 `engines.dsh` 里），从源码构建需要 Node `>=20`。
 运行时不会下载任何东西：浏览器包是预构建的，React 取自页面的模块表。
 
-```sh
-# Web 版
-dsh plugin --profile web add dsh-excalidraw-canvas@latest
+先从 GitHub 装——现在就能用，因为预构建产物已经在仓库里：
 
-# 桌面版
-dsh plugin --profile desktop add dsh-excalidraw-canvas@latest
+```sh
+dsh plugin --profile web add github:dake6767/dsh-excalidraw-canvas
 ```
+
+npm 发布还在等（`dsh-excalidraw-canvas@0.1.0` 已打包就绪）；上架之后同一条命令换成：
+
+```sh
+dsh plugin --profile web add dsh-excalidraw-canvas@latest
+```
+
+桌面版把 `--profile web` 换成 `--profile desktop`。
 
 装完重启 DSH，并**硬刷新浏览器**（Cmd/Ctrl+Shift+R）：客户端包 id 跟改名前的版本不同，
 开着的旧标签会继续用旧包。

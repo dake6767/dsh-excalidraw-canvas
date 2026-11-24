@@ -21,13 +21,21 @@ Requires DeepSeek Harness **0.2.2-rc.5** (declared as `engines.dsh`) and Node
 `>=20` to build from source. Nothing is fetched at runtime: the browser bundle is
 prebuilt and React comes from the page's module table.
 
-```sh
-# Web profile
-dsh plugin --profile web add dsh-excalidraw-canvas@latest
+Install straight from GitHub — this works today, because the prebuilt bundle
+is committed:
 
-# Desktop app profile
-dsh plugin --profile desktop add dsh-excalidraw-canvas@latest
+```sh
+dsh plugin --profile web add github:dake6767/dsh-excalidraw-canvas
 ```
+
+The npm release is pending (`dsh-excalidraw-canvas@0.1.0` is cut and ready);
+once it is up, the same command becomes:
+
+```sh
+dsh plugin --profile web add dsh-excalidraw-canvas@latest
+```
+
+Substitute `--profile desktop` for the desktop app profile.
 
 Then restart DSH and **hard-refresh the browser** (Cmd/Ctrl+Shift+R): the client
 bundle id changed from the pre-rename build, so an open tab keeps the old one.
