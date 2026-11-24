@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Excalidraw 画布",
+    "description": "右侧面板里的 Excalidraw 编辑器。Agent 画的和你在画布上手动改的是同一份 .excalidraw 文件，项目里可直接打开，也能导出 PNG / SVG。",
+    "detail": "docs/DETAIL.md"
+  }
+}

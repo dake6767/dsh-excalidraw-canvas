@@ -1,0 +1,8 @@
+# Your patch layer for this profile: one bundle row that adds the Excalidraw canvas.
+# `directory` is relative to the session's default working directory.
+- insert:
+    - id: excalidraw-canvas
+      name: dsh-excalidraw-canvas
+      config:
+        directory: excalidraw
+        openOnDraw: true

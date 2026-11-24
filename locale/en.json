@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Excalidraw canvas",
+    "description": "An Excalidraw editor in the right sidebar. The agent draws and edits the same .excalidraw document you edit by hand: a standard file in the project, with PNG and SVG export.",
+    "detail": "docs/DETAIL.md"
+  }
+}
